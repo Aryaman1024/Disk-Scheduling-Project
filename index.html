@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interactive Disk Scheduling Simulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Interactive Disk Scheduling Simulator</h1>
+    <p class="subtitle">
+        Analyze and compare disk scheduling algorithms with real-time seek time calculation
+    </p>
+
+    <div class="card">
+        <input type="text" id="requests" placeholder="Enter requests (e.g. 50, 82, 140)">
+        
+        <input type="number" id="head" placeholder="Enter head position">
+
+        <select id="algo">
+            <option value="fcfs">FCFS</option>
+            <option value="sstf">SSTF</option>
+            <option value="scan">SCAN</option>
+            <option value="cscan">C-SCAN</option>
+            <option value="look">LOOK</option>
+        </select>
+
+        <button onclick="run()">Run Simulation</button>
+    </div>
+
+    <!-- RESULT -->
+    <div class="result-card" id="resultBox">
+        <h2>Simulation Result</h2>
+
+        <table>
+            <tr>
+                <th>Algorithm</th>
+                <th>Seek Sequence</th>
+                <th>Total Seek Time</th>
+            </tr>
+            <tr>
+                <td id="algoName">-</td>
+                <td id="sequence">-</td>
+                <td id="seek">-</td>
+            </tr>
+        </table>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
