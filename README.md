@@ -34,3 +34,15 @@ This project is based on Operating Systems concepts and demonstrates how differe
 - Displays total seek time
 - Shows order of disk head movement
 - Compares efficiency of algorithms
+
+# Author
+- Aryaman Raj
+
+# References
+- Operating Systems textbooks
+- Online resources
+
+# Features
+- Easy to understand implementation
+- Multiple algorithms in one project
+- Useful for OS practical exams
